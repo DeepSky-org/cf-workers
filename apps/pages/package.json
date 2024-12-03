@@ -1,0 +1,21 @@
+{
+  "name": "workers",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm run docs:dev",
+    "build": "pnpm run docs:build",
+    "preview": "pnpm run docs:preview",
+    "lint": "eslint \"src/**/*.ts\"",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "eslint": "^8.57.0",
+    "typescript": "5.5.4"
+  }
+}
